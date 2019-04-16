@@ -25,7 +25,6 @@ class Game
         player1Turn ? @player1.lives = @player1.lives - 1 : @player2.lives = @player2.lives - 1
       end
 
-
       if @player1.lives == 0
         puts "Player2 wins with a score of #{player2.lives}/3"
         puts "---- GAME OVER----"
@@ -37,7 +36,6 @@ class Game
       end
 
       puts "P1: #{player1.lives}/3 vs P2: #{player2.lives}/3"
-
 
       puts "---- NEW TURN ----"
       player1Turn = !player1Turn
